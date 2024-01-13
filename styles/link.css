@@ -1,0 +1,43 @@
+.link{
+    margin-top: 8px;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.link>a{
+    text-decoration: none;
+    color: white;
+}
+
+.link>button{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.link>button:hover svg{
+    fill: #7FC7D9;
+}
+
+.link>button>svg{
+    height: 16px;
+    fill: white;
+}
+
+.link>.underline{
+    height: 2px;
+    margin-top: 2px;
+    width: 30%;
+    background-color: #7FC7D9;
+    transition: width 500ms;
+}
+
+.link a:hover + button + .underline{
+    width: calc(100% - 20px);
+}
+
+#sendform{
+    background-color: #7FC7D9;
+}

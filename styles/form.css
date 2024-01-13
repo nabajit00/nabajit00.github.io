@@ -1,0 +1,16 @@
+.form>form{
+    max-width: 60vw;
+}
+
+.form>form>div>input,.form>form>div>textarea{
+    width: 100%;
+}
+
+.form>form>div>textarea{
+    height: 15vh;
+    resize: none;
+}
+
+.form>.progress{
+    position: relative;
+}
