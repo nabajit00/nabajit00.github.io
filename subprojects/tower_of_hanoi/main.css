@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+}
+
+.tower{
+    background-color: black;
+    width: 6px;
+    height: 50vh;
+    bottom: 5vh;
+    position: absolute;
+    border-top-right-radius:5px ;
+    border-top-left-radius:5px ;
+}
+
+.tower1{
+    left: 25vw;
+}
+
+
+.tower2{
+    left: calc(2*25vw);
+}
+
+
+.tower3{
+    left: calc(3*25vw);
+}
+
+.disk{
+    position: absolute;
+    border: 1px solid white;
+    transition-property: left, bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.topui{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.topui .topui-item{
+    padding: 1vh 1vh 1vh 1vh;
+}
+
+.autoplay-ui{
+    flex: 2;
+    background-color: aqua;
+}
+
+.basic-ui{
+    flex: 2;
+    background-color: bisque;
+}
+
+.info-ui{
+ flex: 1;
+ background-color: rgb(200, 253, 255);
+}
+
+#bottom-msg{
+    font-size: small;
+}
+
+.disabled-ui{
+    pointer-events: none;
+    opacity: 0.5;
+}
