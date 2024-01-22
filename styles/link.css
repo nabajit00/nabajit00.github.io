@@ -1,12 +1,12 @@
 .link{
     margin-top: 8px;
     margin-right: 12px;
-    display: inline-block;
+    width: fit-content;
 }
 
-.link>a{
+.link>.address{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .link>button{
@@ -18,26 +18,32 @@
 }
 
 .link>button:hover svg{
-    fill: #7FC7D9;
+    transform: scale(1.15,1.15);
 }
 
 .link>button>svg{
     height: 16px;
-    fill: white;
+    fill: var(--primary);
+    transition: bottom 300ms;
 }
 
-.link>.underline{
+.link .underline{
     height: 2px;
     margin-top: 2px;
-    width: 30%;
-    background-color: #7FC7D9;
+    width: 50%;
+    transform-origin: center;
+    background-color: var(--secondary);
     transition: width 500ms;
 }
 
-.link a:hover + button + .underline{
-    width: calc(100% - 20px);
+.link .address:hover + button + .underline{
+    width: calc(100% - 18px);
 }
 
-#sendform{
-    background-color: #7FC7D9;
+.link .address:hover+.underline{
+    width: 100%;
+}
+
+.link .address:hover{
+    cursor: pointer;
 }

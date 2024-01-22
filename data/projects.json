@@ -1,8 +1,8 @@
 [
     {
-        "name":"",
-        "description":"",
-        "link":"",
-        "img":""
+        "name":"Tower of Hanoi",
+        "description":"Simple tower of hanoi solver",
+        "link":"./subprojects/tower_of_hanoi/index.html",
+        "img":"./imgs/project1.png"
     }
 ]

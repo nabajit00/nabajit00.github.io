@@ -1,5 +1,3 @@
-import { successPopup } from "./popup.js";
-
 export function randomRangeInt(min,max) {
     //[min, max]
     return Math.round(randomRange(min,max));
@@ -31,7 +29,9 @@ export function copyText(event,text){
     
     document.body.removeChild(textarea);
 
-    successPopup("Copied "+ text);
-
     event.preventDefault();
+}
+
+export function openUrlInNewTab(url) {
+    window.open(url, '_blank', 'noopener,noreferrer');
 }

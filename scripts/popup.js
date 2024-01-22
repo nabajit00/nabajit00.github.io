@@ -18,12 +18,15 @@ async function showPopup(){
 
     const popMsg = messages.pop();
 
-    popupstatus.style.backgroundColor = (popMsg.status == 'success')?'#03A9F4':'red';
+    popupbox.setAttribute('data-status',popMsg.status);
+
     popupmsg.innerText = popMsg.msg;
 
-    popupbox.style.transform = 'translateY(0px)';
+    popupbox.style.transform = 'scale(1,1)';
+    // popupbox.style.transform = 'translateY(0px)';
     await wait(2000);
-    popupbox.style.transform = 'translateY(100px)';
+    // popupbox.style.transform = 'translateY(100px)';
+    popupbox.style.transform = 'scale(0,1)';
     await wait(200);
     showingPopup = false;
     showPopup();
